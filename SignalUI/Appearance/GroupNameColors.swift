@@ -54,151 +54,187 @@ public struct GroupNameColors {
         }
     }
 
-    // In descending order of contrast with the other values.
+    // Ultra 2029 — Neon spectrum group name colors
     fileprivate static let groupNameColorValues: [GroupNameColorValue] = [
+        // Electric cyan
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x006DA3),
-            darkTheme: UIColor(rgbHex: 0x00A7FA),
+            lightTheme: UIColor(rgbHex: 0x0077CC),
+            darkTheme: UIColor(rgbHex: 0x00C8FF),
         ),
+        // Electric mint
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x067906),
-            darkTheme: UIColor(rgbHex: 0x0AB80A),
+            lightTheme: UIColor(rgbHex: 0x00995C),
+            darkTheme: UIColor(rgbHex: 0x00FF88),
         ),
+        // Plasma violet
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xB814B8),
-            darkTheme: UIColor(rgbHex: 0xF65AF6),
+            lightTheme: UIColor(rgbHex: 0x7722CC),
+            darkTheme: UIColor(rgbHex: 0xBB66FF),
         ),
+        // Hot coral
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xC13215),
-            darkTheme: UIColor(rgbHex: 0xFF6F52),
+            lightTheme: UIColor(rgbHex: 0xCC1144),
+            darkTheme: UIColor(rgbHex: 0xFF375F),
         ),
+        // Steel blue
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x5B6976),
-            darkTheme: UIColor(rgbHex: 0x8BA1B6),
+            lightTheme: UIColor(rgbHex: 0x445566),
+            darkTheme: UIColor(rgbHex: 0x88AABB),
         ),
+        // Neon rose
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xCC0066),
-            darkTheme: UIColor(rgbHex: 0xF76EB2),
+            lightTheme: UIColor(rgbHex: 0xCC0055),
+            darkTheme: UIColor(rgbHex: 0xFF44AA),
         ),
+        // Electric blue
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x2E51FF),
-            darkTheme: UIColor(rgbHex: 0x8599FF),
+            lightTheme: UIColor(rgbHex: 0x1144EE),
+            darkTheme: UIColor(rgbHex: 0x5588FF),
         ),
+        // Cyan teal
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x007575),
-            darkTheme: UIColor(rgbHex: 0x00B2B2),
+            lightTheme: UIColor(rgbHex: 0x006688),
+            darkTheme: UIColor(rgbHex: 0x00CCDD),
         ),
+        // Solar amber
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x9C5711),
-            darkTheme: UIColor(rgbHex: 0xD5920B),
+            lightTheme: UIColor(rgbHex: 0xAA6600),
+            darkTheme: UIColor(rgbHex: 0xFFAA22),
         ),
+        // Neon pink
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xD00B4D),
-            darkTheme: UIColor(rgbHex: 0xFF6B9C),
+            lightTheme: UIColor(rgbHex: 0xBB0066),
+            darkTheme: UIColor(rgbHex: 0xFF44BB),
         ),
+        // Indigo plasma
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x8F2AF4),
-            darkTheme: UIColor(rgbHex: 0xBF80FF),
+            lightTheme: UIColor(rgbHex: 0x5511DD),
+            darkTheme: UIColor(rgbHex: 0x9966FF),
         ),
+        // Lime neon
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x3D7406),
-            darkTheme: UIColor(rgbHex: 0x5EB309),
+            lightTheme: UIColor(rgbHex: 0x447700),
+            darkTheme: UIColor(rgbHex: 0x88EE00),
         ),
+        // Vermillion
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xD00B0B),
-            darkTheme: UIColor(rgbHex: 0xFF7070),
+            lightTheme: UIColor(rgbHex: 0xCC2200),
+            darkTheme: UIColor(rgbHex: 0xFF6655),
         ),
+        // Emerald
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x007A3D),
-            darkTheme: UIColor(rgbHex: 0x00B85C),
+            lightTheme: UIColor(rgbHex: 0x007744),
+            darkTheme: UIColor(rgbHex: 0x00EE88),
         ),
+        // Periwinkle
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x5151F6),
-            darkTheme: UIColor(rgbHex: 0x9494FF),
+            lightTheme: UIColor(rgbHex: 0x3344EE),
+            darkTheme: UIColor(rgbHex: 0x8899FF),
         ),
+        // Saffron
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x866118),
-            darkTheme: UIColor(rgbHex: 0xD68F00),
+            lightTheme: UIColor(rgbHex: 0x997700),
+            darkTheme: UIColor(rgbHex: 0xEEBB00),
         ),
+        // Sea green
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x067953),
-            darkTheme: UIColor(rgbHex: 0x00B87A),
+            lightTheme: UIColor(rgbHex: 0x007766),
+            darkTheme: UIColor(rgbHex: 0x00DDBB),
         ),
+        // Ultraviolet
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xA20CED),
-            darkTheme: UIColor(rgbHex: 0xCF7CF8),
+            lightTheme: UIColor(rgbHex: 0x8800BB),
+            darkTheme: UIColor(rgbHex: 0xCC55FF),
         ),
+        // Yellow-green
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x4B7000),
-            darkTheme: UIColor(rgbHex: 0x74AD00),
+            lightTheme: UIColor(rgbHex: 0x558800),
+            darkTheme: UIColor(rgbHex: 0xAADD00),
         ),
+        // Magenta
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xC70A88),
-            darkTheme: UIColor(rgbHex: 0xF76EC9),
+            lightTheme: UIColor(rgbHex: 0xBB0099),
+            darkTheme: UIColor(rgbHex: 0xFF44EE),
         ),
+        // Tangerine
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xB34209),
-            darkTheme: UIColor(rgbHex: 0xF57A3D),
+            lightTheme: UIColor(rgbHex: 0xCC5500),
+            darkTheme: UIColor(rgbHex: 0xFF8833),
         ),
+        // Spring green
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x06792D),
-            darkTheme: UIColor(rgbHex: 0x0AB844),
+            lightTheme: UIColor(rgbHex: 0x008833),
+            darkTheme: UIColor(rgbHex: 0x22DD66),
         ),
+        // Lavender
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x7A3DF5),
-            darkTheme: UIColor(rgbHex: 0xAF8AF9),
+            lightTheme: UIColor(rgbHex: 0x6633EE),
+            darkTheme: UIColor(rgbHex: 0xAA88FF),
         ),
+        // Gold
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x6B6B24),
-            darkTheme: UIColor(rgbHex: 0xA4A437),
+            lightTheme: UIColor(rgbHex: 0x886600),
+            darkTheme: UIColor(rgbHex: 0xDDAA00),
         ),
+        // Crimson
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xD00B2C),
-            darkTheme: UIColor(rgbHex: 0xF77389),
+            lightTheme: UIColor(rgbHex: 0xCC0022),
+            darkTheme: UIColor(rgbHex: 0xFF4466),
         ),
+        // Chartreuse
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x2D7906),
-            darkTheme: UIColor(rgbHex: 0x42B309),
+            lightTheme: UIColor(rgbHex: 0x558800),
+            darkTheme: UIColor(rgbHex: 0x88CC00),
         ),
+        // Purple
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xAF0BD0),
-            darkTheme: UIColor(rgbHex: 0xE06EF7),
+            lightTheme: UIColor(rgbHex: 0x9900CC),
+            darkTheme: UIColor(rgbHex: 0xDD55FF),
         ),
+        // Jade
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x32763E),
-            darkTheme: UIColor(rgbHex: 0x4BAF5C),
+            lightTheme: UIColor(rgbHex: 0x226633),
+            darkTheme: UIColor(rgbHex: 0x44BB66),
         ),
+        // Royal blue
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x2662D9),
-            darkTheme: UIColor(rgbHex: 0x7DA1E8),
+            lightTheme: UIColor(rgbHex: 0x1155CC),
+            darkTheme: UIColor(rgbHex: 0x6699FF),
         ),
+        // Ochre
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x76681E),
-            darkTheme: UIColor(rgbHex: 0xB89B0A),
+            lightTheme: UIColor(rgbHex: 0x886600),
+            darkTheme: UIColor(rgbHex: 0xCCAA00),
         ),
+        // Aqua
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x067462),
-            darkTheme: UIColor(rgbHex: 0x09B397),
+            lightTheme: UIColor(rgbHex: 0x007799),
+            darkTheme: UIColor(rgbHex: 0x00CCEE),
         ),
+        // Violet
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x6447F5),
-            darkTheme: UIColor(rgbHex: 0xA18FF9),
+            lightTheme: UIColor(rgbHex: 0x5533EE),
+            darkTheme: UIColor(rgbHex: 0x9988FF),
         ),
+        // Moss
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x5E6E0C),
-            darkTheme: UIColor(rgbHex: 0x8FAA09),
+            lightTheme: UIColor(rgbHex: 0x556600),
+            darkTheme: UIColor(rgbHex: 0x99BB00),
         ),
+        // Cerulean
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x077288),
-            darkTheme: UIColor(rgbHex: 0x00AED1),
+            lightTheme: UIColor(rgbHex: 0x007799),
+            darkTheme: UIColor(rgbHex: 0x00BBDD),
         ),
+        // Fuchsia
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0xC20AA3),
-            darkTheme: UIColor(rgbHex: 0xF75FDD),
+            lightTheme: UIColor(rgbHex: 0xAA0099),
+            darkTheme: UIColor(rgbHex: 0xFF33CC),
         ),
+        // Forest
         GroupNameColorValue(
-            lightTheme: UIColor(rgbHex: 0x2D761E),
-            darkTheme: UIColor(rgbHex: 0x43B42D),
+            lightTheme: UIColor(rgbHex: 0x226622),
+            darkTheme: UIColor(rgbHex: 0x44BB44),
         ),
     ]
 }

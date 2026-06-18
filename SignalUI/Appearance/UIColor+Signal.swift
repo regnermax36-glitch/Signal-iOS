@@ -2,6 +2,8 @@
 // Copyright 2024 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 //
+// Ultra 2029 Design System — Futuristic dark-first color palette
+//
 
 import SignalServiceKit
 public import SwiftUI
@@ -66,59 +68,65 @@ extension UIColor {
 
 extension UIColor.Signal {
 
-    // MARK: Accent
+    // MARK: Accent — Ultra 2029 Neon Palette
 
+    /// Primary accent: electric cyan in dark, deep electric blue in light
     public static var ultramarine: UIColor {
         UIColor.byRGBHex(
-            light: 0x2267F5,
-            lightHighContrast: 0x0A43B9,
-            dark: 0x2D70FA,
-            darkHighContrast: 0x5D92FF,
+            light: 0x0077E6,
+            lightHighContrast: 0x0055CC,
+            dark: 0x00C8FF,
+            darkHighContrast: 0x40DDFF,
         )
     }
 
+    /// Danger / destructive: hot coral
     public static var red: UIColor {
         UIColor.byRGBHex(
-            light: 0xFF3B30,
-            lightHighContrast: 0xD70015,
-            dark: 0xFF453A,
-            darkHighContrast: 0xFF6961,
+            light: 0xFF2255,
+            lightHighContrast: 0xCC0033,
+            dark: 0xFF375F,
+            darkHighContrast: 0xFF6B8A,
         )
     }
 
+    /// Warning: solar amber
     public static var orange: UIColor {
         UIColor.byRGBHex(
-            light: 0xFF9500,
-            lightHighContrast: 0xC93400,
-            dark: 0xFF9F0A,
-            darkHighContrast: 0xFFB340,
+            light: 0xFF8800,
+            lightHighContrast: 0xCC5500,
+            dark: 0xFFAA00,
+            darkHighContrast: 0xFFCC44,
         )
     }
 
+    /// Caution: plasma yellow
     public static var yellow: UIColor {
         UIColor.byRGBHex(
-            light: 0xFFCC00,
-            lightHighContrast: 0xB25000,
-            dark: 0xFFD60A,
-            darkHighContrast: 0xFFD426,
+            light: 0xF5C400,
+            lightHighContrast: 0xAA7700,
+            dark: 0xFFDD00,
+            darkHighContrast: 0xFFEE44,
         )
     }
 
+    /// Success: electric mint
     public static var green: UIColor {
         UIColor.byRGBHex(
-            light: 0x34C759,
-            lightHighContrast: 0x248A3D,
-            dark: 0x30D158,
-            darkHighContrast: 0x30DB5B,
+            light: 0x00BB55,
+            lightHighContrast: 0x007733,
+            dark: 0x00FF88,
+            darkHighContrast: 0x44FFAA,
         )
     }
 
+    /// Secondary accent: plasma violet
     public static var indigo: UIColor {
         UIColor.byRGBHex(
-            light: 0x5856D6,
-            lightHighContrast: 0x3634A3,
-            dark: 0x5E5CE6,
-            darkHighContrast: 0x7D7AFF,
+            light: 0x6244E8,
+            lightHighContrast: 0x4422CC,
+            dark: 0x9B5CF6,
+            darkHighContrast: 0xBB88FF,
         )
     }
 
@@ -126,131 +134,144 @@ extension UIColor.Signal {
 
     public static var link: UIColor { ultramarine }
 
-    // MARK: Label
+    // MARK: Label — Holographic Text Colors
 
+    /// Primary text: pure white in dark, near-black in light
     public static var label: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x000000),
-            dark: UIColor(rgbHex: 0xFFFFFF),
+            light: UIColor(rgbHex: 0x0A0A14),
+            dark: UIColor(rgbHex: 0xF0F4FF),
         )
     }
 
+    /// Secondary text: blue-tinted translucent
     public static var secondaryLabel: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x3C3C43, alpha: 0.72),
-            lightHighContrast: UIColor(rgbHex: 0x3C3C43, alpha: 0.95),
-            dark: UIColor(rgbHex: 0xEBEBF5, alpha: 0.7),
-            darkHighContrast: UIColor(rgbHex: 0xEBEBF5, alpha: 0.8),
+            light: UIColor(rgbHex: 0x1A1A3A, alpha: 0.68),
+            lightHighContrast: UIColor(rgbHex: 0x1A1A3A, alpha: 0.92),
+            dark: UIColor(rgbHex: 0xC8DAFF, alpha: 0.70),
+            darkHighContrast: UIColor(rgbHex: 0xC8DAFF, alpha: 0.85),
         )
     }
 
+    /// Tertiary text: ghost blue
     public static var tertiaryLabel: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x3C3C43, alpha: 0.3),
-            lightHighContrast: UIColor(rgbHex: 0x3C3C43, alpha: 0.5),
-            dark: UIColor(rgbHex: 0xEBEBF5, alpha: 0.3),
-            darkHighContrast: UIColor(rgbHex: 0xEBEBF5, alpha: 0.4),
+            light: UIColor(rgbHex: 0x2020AA, alpha: 0.28),
+            lightHighContrast: UIColor(rgbHex: 0x2020AA, alpha: 0.48),
+            dark: UIColor(rgbHex: 0x99BBFF, alpha: 0.30),
+            darkHighContrast: UIColor(rgbHex: 0x99BBFF, alpha: 0.45),
         )
     }
 
+    /// Quaternary text: barely-there indigo
     public static var quaternaryLabel: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x3C3C43, alpha: 0.18),
-            lightHighContrast: UIColor(rgbHex: 0x3C3C43, alpha: 0.4),
-            dark: UIColor(rgbHex: 0xEBEBF5, alpha: 0.16),
-            darkHighContrast: UIColor(rgbHex: 0xEBEBF5, alpha: 0.26),
+            light: UIColor(rgbHex: 0x3030BB, alpha: 0.14),
+            lightHighContrast: UIColor(rgbHex: 0x3030BB, alpha: 0.32),
+            dark: UIColor(rgbHex: 0x7799FF, alpha: 0.15),
+            darkHighContrast: UIColor(rgbHex: 0x7799FF, alpha: 0.28),
         )
     }
 
+    /// Emphasis / error label: hot coral
     public static var emphasisLabel: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0xE81F28),
-            lightHighContrast: UIColor(rgbHex: 0xE30B14),
-            dark: UIColor(rgbHex: 0xFC3040),
-            darkHighContrast: UIColor(rgbHex: 0xFF515E),
+            light: UIColor(rgbHex: 0xFF2255),
+            lightHighContrast: UIColor(rgbHex: 0xCC0033),
+            dark: UIColor(rgbHex: 0xFF375F),
+            darkHighContrast: UIColor(rgbHex: 0xFF6B8A),
         )
     }
 
+    /// Warning label: amber glow
     public static var warningLabel: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0xB44828),
-            dark: UIColor(rgbHex: 0xEB977D),
+            light: UIColor(rgbHex: 0xAA5500),
+            dark: UIColor(rgbHex: 0xFFAA44),
         )
     }
 
+    /// Official / verified: plasma violet
     public static var officialLabel: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x2934FD),
-            dark: UIColor(rgbHex: 0xC5C7F5),
+            light: UIColor(rgbHex: 0x4422CC),
+            dark: UIColor(rgbHex: 0xBB99FF),
         )
     }
 
     public static var officialLabelBackground: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x2934FD).withAlphaComponent(0.12),
-            dark: UIColor(rgbHex: 0x424585),
+            light: UIColor(rgbHex: 0x4422CC).withAlphaComponent(0.10),
+            dark: UIColor(rgbHex: 0x3A2266),
         )
     }
 
-    // MARK: Background
+    // MARK: Background — Deep Space
 
+    /// Primary background: deep space in dark, ghost white in light
     public static var background: UIColor {
         UIColor.byUserInterfaceLevel(
             base: UIColor.byRGBHex(
-                light: 0xFFFFFF,
-                dark: 0x000000,
+                light: 0xF8F8FF,
+                dark: 0x050509,
             ),
             elevated: UIColor.byRGBHex(
                 light: 0xFFFFFF,
-                dark: 0x1C1C1E,
-                darkHighContrast: 0x343438,
+                dark: 0x0F0F1E,
+                darkHighContrast: 0x1E1E33,
             ),
         )
     }
 
+    /// Secondary background: cosmic navy in dark, pale blue-white in light
     public static var secondaryBackground: UIColor {
         guard #available(iOS 16.0, *) else {
             return .secondarySystemBackground
         }
         return UIColor.byUserInterfaceLevel(
             base: UIColor.byRGBHex(
-                light: 0xEFEFF0,
-                lightHighContrast: 0xE4E4E7,
-                dark: 0x1C1C1E,
-                darkHighContrast: 0x343438,
+                light: 0xEEEEFA,
+                lightHighContrast: 0xE4E4F2,
+                dark: 0x0C0C1A,
+                darkHighContrast: 0x1C1C30,
             ),
             elevated: UIColor.byRGBHex(
-                light: 0xEFEFF0,
-                lightHighContrast: 0xE4E4E7,
-                dark: 0x2C2C2E,
-                darkHighContrast: 0x444447,
+                light: 0xEEEEFA,
+                lightHighContrast: 0xE4E4F2,
+                dark: 0x141428,
+                darkHighContrast: 0x22223A,
             ),
         )
     }
 
+    /// Tertiary background: deepest violet-black in dark
     public static var tertiaryBackground: UIColor {
         UIColor.byUserInterfaceLevel(
             base: UIColor.byRGBHex(
                 light: 0xFFFFFF,
-                dark: 0x2C2C2E,
-                darkHighContrast: 0x444447,
+                dark: 0x0F0F22,
+                darkHighContrast: 0x1E1E36,
             ),
             elevated: UIColor.byRGBHex(
                 light: 0xFFFFFF,
-                dark: 0x3A3A3C,
-                darkHighContrast: 0x545457,
+                dark: 0x16163A,
+                darkHighContrast: 0x252550,
             ),
         )
     }
 
     public static var secondaryUltramarineBackground: UIColor {
-        UIColor(rgbHex: 0xC7DDFB)
+        UIColor(
+            light: UIColor(rgbHex: 0xC0DDFF),
+            dark: UIColor(rgbHex: 0x001833),
+        )
     }
 
     public static var backdrop: UIColor {
         UIColor(
-            light: UIColor(white: 0, alpha: 0.2),
-            dark: UIColor(white: 0, alpha: 0.48),
+            light: UIColor(white: 0, alpha: 0.24),
+            dark: UIColor(white: 0, alpha: 0.72),
         )
     }
 
@@ -262,15 +283,15 @@ extension UIColor.Signal {
         }
         return UIColor.byUserInterfaceLevel(
             base: UIColor.byRGBHex(
-                light: 0xEFEFF0,
-                lightHighContrast: 0xE4E4E7,
-                dark: 0x000000,
+                light: 0xEEEEFA,
+                lightHighContrast: 0xE4E4F2,
+                dark: 0x050509,
             ),
             elevated: UIColor.byRGBHex(
-                light: 0xEFEFF0,
-                lightHighContrast: 0xE4E4E7,
-                dark: 0x1C1C1E,
-                darkHighContrast: 0x343438,
+                light: 0xEEEEFA,
+                lightHighContrast: 0xE4E4F2,
+                dark: 0x0F0F1E,
+                darkHighContrast: 0x1E1E33,
             ),
         )
     }
@@ -279,13 +300,13 @@ extension UIColor.Signal {
         UIColor.byUserInterfaceLevel(
             base: UIColor.byRGBHex(
                 light: 0xFFFFFF,
-                dark: 0x1C1C1E,
-                darkHighContrast: 0x343438,
+                dark: 0x0F0F1E,
+                darkHighContrast: 0x1E1E33,
             ),
             elevated: UIColor.byRGBHex(
                 light: 0xFFFFFF,
-                dark: 0x2C2C2E,
-                darkHighContrast: 0x444447,
+                dark: 0x141428,
+                darkHighContrast: 0x22223A,
             ),
         )
     }
@@ -296,88 +317,88 @@ extension UIColor.Signal {
         }
         return UIColor.byUserInterfaceLevel(
             base: UIColor.byRGBHex(
-                light: 0xEFEFF0,
-                lightHighContrast: 0xE4E4E7,
-                dark: 0x2C2C2E,
-                darkHighContrast: 0x444447,
+                light: 0xEEEEFA,
+                lightHighContrast: 0xE4E4F2,
+                dark: 0x141428,
+                darkHighContrast: 0x22223A,
             ),
             elevated: UIColor.byRGBHex(
-                light: 0xEFEFF0,
-                lightHighContrast: 0xE4E4E7,
-                dark: 0x3A3A3C,
-                darkHighContrast: 0x545457,
+                light: 0xEEEEFA,
+                lightHighContrast: 0xE4E4F2,
+                dark: 0x1A1A3A,
+                darkHighContrast: 0x2A2A50,
             ),
         )
     }
 
-    // MARK: Fill
+    // MARK: Fill — Translucent Layers
 
     public static var primaryFill: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x787880, alpha: 0.2),
-            lightHighContrast: UIColor(rgbHex: 0x787880, alpha: 0.3),
-            dark: UIColor(rgbHex: 0x787880, alpha: 0.36),
-            darkHighContrast: UIColor(rgbHex: 0x787880, alpha: 0.46),
+            light: UIColor(rgbHex: 0x0000AA, alpha: 0.08),
+            lightHighContrast: UIColor(rgbHex: 0x0000AA, alpha: 0.18),
+            dark: UIColor(rgbHex: 0x4488FF, alpha: 0.22),
+            darkHighContrast: UIColor(rgbHex: 0x4488FF, alpha: 0.36),
         )
     }
 
     public static var secondaryFill: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x787880, alpha: 0.16),
-            lightHighContrast: UIColor(rgbHex: 0x787880, alpha: 0.26),
-            dark: UIColor(rgbHex: 0x787880, alpha: 0.32),
-            darkHighContrast: UIColor(rgbHex: 0x787880, alpha: 0.42),
+            light: UIColor(rgbHex: 0x0000AA, alpha: 0.06),
+            lightHighContrast: UIColor(rgbHex: 0x0000AA, alpha: 0.14),
+            dark: UIColor(rgbHex: 0x4488FF, alpha: 0.16),
+            darkHighContrast: UIColor(rgbHex: 0x4488FF, alpha: 0.28),
         )
     }
 
     public static var tertiaryFill: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x767680, alpha: 0.12),
-            lightHighContrast: UIColor(rgbHex: 0x767680, alpha: 0.22),
-            dark: UIColor(rgbHex: 0x767680, alpha: 0.24),
-            darkHighContrast: UIColor(rgbHex: 0x767680, alpha: 0.34),
+            light: UIColor(rgbHex: 0x0000AA, alpha: 0.04),
+            lightHighContrast: UIColor(rgbHex: 0x0000AA, alpha: 0.12),
+            dark: UIColor(rgbHex: 0x6699FF, alpha: 0.12),
+            darkHighContrast: UIColor(rgbHex: 0x6699FF, alpha: 0.22),
         )
     }
 
     public static var quaternaryFill: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x747480, alpha: 0.08),
-            lightHighContrast: UIColor(rgbHex: 0x747480, alpha: 0.18),
-            dark: UIColor(rgbHex: 0x747480, alpha: 0.18),
-            darkHighContrast: UIColor(rgbHex: 0x747480, alpha: 0.28),
+            light: UIColor(rgbHex: 0x0000AA, alpha: 0.02),
+            lightHighContrast: UIColor(rgbHex: 0x0000AA, alpha: 0.08),
+            dark: UIColor(rgbHex: 0x8899FF, alpha: 0.08),
+            darkHighContrast: UIColor(rgbHex: 0x8899FF, alpha: 0.18),
         )
     }
 
-    // MARK: Material
+    // MARK: Material — Glass Morphism Base
 
     /// Designed to be used on top of material (blur / glass) backgrounds.
     public enum MaterialBase {
 
         public static var fillPrimary: UIColor {
             UIColor(
-                light: UIColor(white: 0, alpha: 0.24),
-                dark: UIColor(white: 1, alpha: 0.48),
+                light: UIColor(white: 0, alpha: 0.16),
+                dark: UIColor(rgbHex: 0x00C8FF, alpha: 0.22),
             )
         }
 
         public static var fillSecondary: UIColor {
             UIColor(
-                light: UIColor(white: 0, alpha: 0.16),
-                dark: UIColor(white: 1, alpha: 0.24),
+                light: UIColor(white: 0, alpha: 0.10),
+                dark: UIColor(rgbHex: 0x00C8FF, alpha: 0.14),
             )
         }
 
         public static var fillTertiary: UIColor {
             UIColor(
-                light: UIColor(white: 0, alpha: 0.1),
-                dark: UIColor(white: 1, alpha: 0.16),
+                light: UIColor(white: 0, alpha: 0.06),
+                dark: UIColor(rgbHex: 0x00C8FF, alpha: 0.08),
             )
         }
 
         public static var button: UIColor {
             UIColor(
-                light: UIColor(white: 0, alpha: 0.12),
-                dark: UIColor(white: 1, alpha: 0.2),
+                light: UIColor(white: 0, alpha: 0.10),
+                dark: UIColor(rgbHex: 0x00C8FF, alpha: 0.18),
             )
         }
     }
@@ -391,28 +412,28 @@ extension UIColor.Signal {
         public static var fillPrimary: UIColor {
             UIColor(
                 light: UIColor(white: 1, alpha: 1),
-                dark: UIColor(white: 1, alpha: 0.48),
+                dark: UIColor(white: 1, alpha: 0.52),
             )
         }
 
         public static var fillSecondary: UIColor {
             UIColor(
-                light: UIColor(white: 1, alpha: 0.8),
-                dark: UIColor(white: 1, alpha: 0.24),
+                light: UIColor(white: 1, alpha: 0.85),
+                dark: UIColor(white: 1, alpha: 0.28),
             )
         }
 
         public static var fillTertiary: UIColor {
             UIColor(
-                light: UIColor(white: 1, alpha: 0.6),
-                dark: UIColor(white: 1, alpha: 0.16),
+                light: UIColor(white: 1, alpha: 0.65),
+                dark: UIColor(white: 1, alpha: 0.18),
             )
         }
 
         public static var button: UIColor {
             UIColor(
-                light: UIColor(white: 1, alpha: 0.8),
-                dark: UIColor(white: 1, alpha: 0.2),
+                light: UIColor(white: 1, alpha: 0.85),
+                dark: UIColor(white: 1, alpha: 0.22),
             )
         }
     }
@@ -427,11 +448,11 @@ extension UIColor.Signal {
         }
 
         public static var labelSecondary: UIColor {
-            UIColor(white: 1, alpha: 0.8)
+            UIColor(white: 1, alpha: 0.82)
         }
 
         public static var labelTertiary: UIColor {
-            UIColor(white: 1, alpha: 0.4)
+            UIColor(white: 1, alpha: 0.44)
         }
 
         public static var labelInverted: UIColor {
@@ -439,54 +460,114 @@ extension UIColor.Signal {
         }
 
         public static var labelInvertedSecondary: UIColor {
-            UIColor(white: 0, alpha: 0.7)
+            UIColor(white: 0, alpha: 0.72)
         }
 
         public static var fillPrimary: UIColor {
-            UIColor(white: 1, alpha: 0.8)
+            UIColor(white: 1, alpha: 0.82)
         }
 
         public static var fillSecondary: UIColor {
-            UIColor(white: 1, alpha: 0.7)
+            UIColor(white: 1, alpha: 0.72)
         }
 
         public static var fillTertiary: UIColor {
             UIColor(
-                light: UIColor(white: 1, alpha: 0.6),
-                dark: UIColor(white: 1, alpha: 0.48),
+                light: UIColor(white: 1, alpha: 0.62),
+                dark: UIColor(white: 1, alpha: 0.50),
             )
         }
 
         public static var button: UIColor {
-            UIColor(white: 1, alpha: 0.2)
+            UIColor(white: 1, alpha: 0.22)
         }
     }
+
+    // MARK: Glass Tint (iOS 26+)
 
     @available(iOS 26, *)
     public static var glassBackgroundTint: UIColor {
         UIColor(
-            light: UIColor(white: 1, alpha: 0.12),
-            dark: UIColor(white: 0, alpha: 0.2),
+            light: UIColor(rgbHex: 0x0055FF, alpha: 0.06),
+            dark: UIColor(rgbHex: 0x00C8FF, alpha: 0.10),
         )
     }
 
-    // MARK: Separator
+    // MARK: Separator — Neon Hairlines
 
     public static var opaqueSeparator: UIColor {
         UIColor.byRGBHex(
-            light: 0xC6C6C8,
-            lightHighContrast: 0xAEAEB2,
-            dark: 0x38383A,
-            darkHighContrast: 0x515154,
+            light: 0xD0D0E8,
+            lightHighContrast: 0xAAAAAA,
+            dark: 0x1E1E3A,
+            darkHighContrast: 0x2E2E55,
         )
     }
 
     public static var transparentSeparator: UIColor {
         UIColor(
-            light: UIColor(rgbHex: 0x3C3C43, alpha: 0.36),
-            lightHighContrast: UIColor(rgbHex: 0x3C3C43, alpha: 0.46),
-            dark: UIColor(rgbHex: 0x545458, alpha: 0.65),
-            darkHighContrast: UIColor(rgbHex: 0x545458, alpha: 0.75),
+            light: UIColor(rgbHex: 0x0000AA, alpha: 0.14),
+            lightHighContrast: UIColor(rgbHex: 0x0000AA, alpha: 0.28),
+            dark: UIColor(rgbHex: 0x00C8FF, alpha: 0.18),
+            darkHighContrast: UIColor(rgbHex: 0x00C8FF, alpha: 0.32),
+        )
+    }
+
+    // MARK: Ultra 2029 Exclusive Colors
+
+    /// Neon glow tint for active/focused states
+    public static var neonGlow: UIColor {
+        UIColor(
+            light: UIColor(rgbHex: 0x0077E6, alpha: 0.15),
+            dark: UIColor(rgbHex: 0x00C8FF, alpha: 0.25),
+        )
+    }
+
+    /// Plasma violet glow — secondary interactive glow
+    public static var plasmaGlow: UIColor {
+        UIColor(
+            light: UIColor(rgbHex: 0x6244E8, alpha: 0.12),
+            dark: UIColor(rgbHex: 0x9B5CF6, alpha: 0.28),
+        )
+    }
+
+    /// Deep space gradient start — for use in gradient backgrounds
+    public static var cosmicStart: UIColor {
+        UIColor(
+            light: UIColor(rgbHex: 0xF8F8FF),
+            dark: UIColor(rgbHex: 0x050509),
+        )
+    }
+
+    /// Deep space gradient end — cosmic navy
+    public static var cosmicEnd: UIColor {
+        UIColor(
+            light: UIColor(rgbHex: 0xEAEAFF),
+            dark: UIColor(rgbHex: 0x0A0A1E),
+        )
+    }
+
+    /// Holographic border — subtle neon edge for cards/bubbles
+    public static var holographicBorder: UIColor {
+        UIColor(
+            light: UIColor(rgbHex: 0x0055FF, alpha: 0.18),
+            dark: UIColor(rgbHex: 0x00C8FF, alpha: 0.30),
+        )
+    }
+
+    /// Outgoing message bubble: neon cyan gradient tint
+    public static var outgoingBubble: UIColor {
+        UIColor(
+            light: UIColor(rgbHex: 0x0077E6),
+            dark: UIColor(rgbHex: 0x0099CC),
+        )
+    }
+
+    /// Incoming message bubble: deep glass in dark, soft in light
+    public static var incomingBubble: UIColor {
+        UIColor(
+            light: UIColor(rgbHex: 0xF0F0FF),
+            dark: UIColor(rgbHex: 0x141430),
         )
     }
 }
@@ -611,4 +692,33 @@ extension Color.Signal {
         Color(UIColor.Signal.transparentSeparator)
     }
 
+    // MARK: Ultra 2029
+
+    public static var neonGlow: Color {
+        Color(UIColor.Signal.neonGlow)
+    }
+
+    public static var plasmaGlow: Color {
+        Color(UIColor.Signal.plasmaGlow)
+    }
+
+    public static var holographicBorder: Color {
+        Color(UIColor.Signal.holographicBorder)
+    }
+
+    public static var cosmicStart: Color {
+        Color(UIColor.Signal.cosmicStart)
+    }
+
+    public static var cosmicEnd: Color {
+        Color(UIColor.Signal.cosmicEnd)
+    }
+
+    public static var outgoingBubble: Color {
+        Color(UIColor.Signal.outgoingBubble)
+    }
+
+    public static var incomingBubble: Color {
+        Color(UIColor.Signal.incomingBubble)
+    }
 }

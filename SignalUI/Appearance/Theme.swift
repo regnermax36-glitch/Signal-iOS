@@ -36,45 +36,64 @@ public final class Theme {
     }
 
     public class func setupSignalAppearance() {
-        let primaryIconColor = UIColor(
-            light: .ows_gray75,
-            lightHighContrast: .ows_gray75,
-            dark: .ows_gray15,
-            darkHighContrast: .ows_gray15,
-        )
+        // Ultra 2029: neon icon tint — cyan in dark, electric blue in light
+        let primaryIconColor = UIColor.Signal.ultramarine
+
+        // Navigation bar: deep space background with no hairline shadow
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = UIColor.Signal.background
+        navBarAppearance.shadowColor = UIColor.Signal.transparentSeparator
+        navBarAppearance.titleTextAttributes = [
+            .foregroundColor: UIColor.Signal.label,
+            .font: UIFont.systemFont(ofSize: 17, weight: .semibold),
+        ]
+        navBarAppearance.largeTitleTextAttributes = [
+            .foregroundColor: UIColor.Signal.label,
+            .font: UIFont.systemFont(ofSize: 34, weight: .bold),
+        ]
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        UINavigationBar.appearance().compactAppearance = navBarAppearance
         UINavigationBar.appearance().barTintColor = UIColor.Signal.background
         UINavigationBar.appearance().tintColor = primaryIconColor
+
+        // Toolbar: matching deep space
         UIToolbar.appearance().barTintColor = UIColor.Signal.background
-        UIToolbar.appearance().tintColor = primaryIconColor
+        UIToolbar.appearance().tintColor = UIColor.Signal.ultramarine
 
-        // We do _not_ specify BarButton.appearance().tintColor because it is sufficient to specify
-        // UINavigationBar.appearance().tintColor. Furthermore, specifying the BarButtonItem's
-        // appearance makes it more difficult to override the navbar theme, e.g. how we _always_
-        // use dark theme in the media send flow and gallery views. If we were specifying
-        // barButton.appearance().tintColor we would then have to manually override each
-        // BarButtonItem's tint, rather than just the navbars.
-        //
-        // UIBarButtonItem.appearance.tintColor = Theme.primaryIconColor;
-
-        // Using UIText{View,Field}.appearance().keyboardAppearance crashes due to a bug in UIKit,
-        // so we don't do it.
-
+        // Table cells: neon accent tint
         UITableViewCell.appearance().tintColor = primaryIconColor
-        UIToolbar.appearance().tintColor = .ows_accentBlue
+
+        // Tab bar: glass morphism dark base
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithOpaqueBackground()
+        tabBarAppearance.backgroundColor = UIColor.Signal.background
+        tabBarAppearance.shadowColor = UIColor.Signal.transparentSeparator
+        UITabBar.appearance().standardAppearance = tabBarAppearance
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
+        UITabBar.appearance().tintColor = UIColor.Signal.ultramarine
+        UITabBar.appearance().unselectedItemTintColor = UIColor.Signal.tertiaryLabel
 
         // If we set NSShadowAttributeName, the NSForegroundColorAttributeName value is ignored.
         UINavigationBar.appearance().titleTextAttributes = [
             .foregroundColor: UIColor.Signal.label,
         ]
 
+        // Cursor / selection: neon cyan in dark, electric blue in light
         let cursorColor = UIColor(
-            light: .Signal.accent,
-            lightHighContrast: .Signal.accent,
-            dark: .white,
-            darkHighContrast: .white,
+            light: .Signal.ultramarine,
+            lightHighContrast: .Signal.ultramarine,
+            dark: UIColor(rgbHex: 0x00C8FF),
+            darkHighContrast: UIColor(rgbHex: 0x40DDFF),
         )
         UITextView.appearance(whenContainedInInstancesOf: [OWSNavigationController.self]).tintColor = cursorColor
         UITextField.appearance(whenContainedInInstancesOf: [OWSNavigationController.self]).tintColor = cursorColor
+
+        // Search bar styling
+        UISearchBar.appearance().tintColor = UIColor.Signal.ultramarine
     }
 
     // MARK: - Theme Mode

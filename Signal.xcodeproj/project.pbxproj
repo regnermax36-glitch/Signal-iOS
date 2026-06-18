@@ -1493,6 +1493,7 @@
 		76387BF028F4ED73002C7BA5 /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76387BEF28F4ED73002C7BA5 /* CaseIterable.swift */; };
 		763A16002AEC3A490081D7E5 /* OWSContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A15FF2AEC3A490081D7E5 /* OWSContact.swift */; };
 		763A29B72F33F4AE0038E6A5 /* BubbleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A29B62F33F4A80038E6A5 /* BubbleConfiguration.swift */; };
+		U29001112029D00000000001 /* Ultra2029Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = U29001112029D00000000000 /* Ultra2029Design.swift */; };
 		763D7DDB27E155ED002EA7E6 /* RoundMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D7DDA27E155ED002EA7E6 /* RoundMediaButton.swift */; };
 		763D7DDD27E25DC8002EA7E6 /* AttachmentApprovalTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D7DDC27E25DC8002EA7E6 /* AttachmentApprovalTopBar.swift */; };
 		7647A33C2A270348002EAC93 /* FingerprintScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647A33B2A270348002EAC93 /* FingerprintScanViewController.swift */; };
@@ -5708,6 +5709,7 @@
 		76387BEF28F4ED73002C7BA5 /* CaseIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseIterable.swift; sourceTree = "<group>"; };
 		763A15FF2AEC3A490081D7E5 /* OWSContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWSContact.swift; sourceTree = "<group>"; };
 		763A29B62F33F4A80038E6A5 /* BubbleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleConfiguration.swift; sourceTree = "<group>"; };
+		U29001112029D00000000000 /* Ultra2029Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultra2029Design.swift; sourceTree = "<group>"; };
 		763D7DDA27E155ED002EA7E6 /* RoundMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundMediaButton.swift; sourceTree = "<group>"; };
 		763D7DDC27E25DC8002EA7E6 /* AttachmentApprovalTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentApprovalTopBar.swift; sourceTree = "<group>"; };
 		7647A33B2A270348002EAC93 /* FingerprintScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerprintScanViewController.swift; sourceTree = "<group>"; };
@@ -9121,6 +9123,7 @@
 				7677E40C29F75C4200AC6A75 /* Theme.swift */,
 				66FC638329E2201500F00DAC /* ThemedColor+Theme.swift */,
 				B9F9ABF62CB98844001AE92D /* UIColor+Signal.swift */,
+				U29001112029D00000000000 /* Ultra2029Design.swift */,
 			);
 			path = Appearance;
 			sourceTree = "<group>";
@@ -17793,6 +17796,7 @@
 				762EBBD22A2FE370002FD28F /* BlockListUIUtils.swift in Sources */,
 				3402AAA8271D9E180084CBAE /* BodyRangesTextView.swift in Sources */,
 				763A29B72F33F4AE0038E6A5 /* BubbleConfiguration.swift in Sources */,
+				U29001112029D00000000001 /* Ultra2029Design.swift in Sources */,
 				5073EACD2C4F45F2001FBB3E /* CallLink.swift in Sources */,
 				5073EACF2C4F469A001FBB3E /* CallLinkFetcher.swift in Sources */,
 				83B9573927C9A1FA00A678FD /* CaptchaView.swift in Sources */,

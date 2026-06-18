@@ -142,22 +142,21 @@ public extension UIColor {
 
     // MARK: Accent Colors
 
-    /// Nav Bar, Primary Buttons
+    /// Nav Bar, Primary Buttons — Ultra 2029: electric blue
     class var ows_accentBlue: UIColor {
-        // Ultramarine UI
-        return UIColor(rgbHex: 0x2C6BED)
+        return UIColor(rgbHex: 0x0077E6)
     }
 
-    /// Making calls, success states
+    /// Making calls, success states — Ultra 2029: electric mint
     @objc(ows_accentGreenColor)
     class var ows_accentGreen: UIColor {
-        return UIColor(rgbHex: 0x4CAF50)
+        return UIColor(rgbHex: 0x00BB55)
     }
 
-    /// Ending calls, error states
+    /// Ending calls, error states — Ultra 2029: hot coral
     @objc(ows_accentRedColor)
     class var ows_accentRed: UIColor {
-        return UIColor(rgbHex: 0xF44336)
+        return UIColor(rgbHex: 0xFF2255)
     }
 
     // MARK: - GreyScale
@@ -167,74 +166,75 @@ public extension UIColor {
         return UIColor(rgbHex: 0xFFFFFF)
     }
 
+    // Ultra 2029: blue-tinted space grays
     class var ows_gray02: UIColor {
-        return UIColor(rgbHex: 0xF6F6F6)
+        return UIColor(rgbHex: 0xF5F5FF)
     }
 
     class var ows_gray05: UIColor {
-        return UIColor(rgbHex: 0xE9E9E9)
+        return UIColor(rgbHex: 0xECECFA)
     }
 
     class var ows_gray10: UIColor {
-        return UIColor(rgbHex: 0xf0f0f0)
+        return UIColor(rgbHex: 0xE8E8F8)
     }
 
     class var ows_gray12: UIColor {
-        return UIColor(rgbHex: 0xe0e0e0)
+        return UIColor(rgbHex: 0xDADAF0)
     }
 
     class var ows_gray15: UIColor {
-        return UIColor(rgbHex: 0xD4D4D4)
+        return UIColor(rgbHex: 0xCCCCEE)
     }
 
     class var ows_gray20: UIColor {
-        return UIColor(rgbHex: 0xCCCCCC)
+        return UIColor(rgbHex: 0xC4C4E8)
     }
 
     class var ows_gray22: UIColor {
-        return UIColor(rgbHex: 0xC6C6C6)
+        return UIColor(rgbHex: 0xBBBBE4)
     }
 
     class var ows_gray25: UIColor {
-        return UIColor(rgbHex: 0xB9B9B9)
+        return UIColor(rgbHex: 0xAAAADD)
     }
 
     class var ows_gray40: UIColor {
-        return UIColor(rgbHex: 0x999999)
+        return UIColor(rgbHex: 0x8888BB)
     }
 
     @objc(ows_gray45Color)
     class var ows_gray45: UIColor {
-        return UIColor(rgbHex: 0x848484)
+        return UIColor(rgbHex: 0x7777AA)
     }
 
     @objc(ows_middleGrayColor)
     class var ows_middleGray: UIColor {
-        return UIColor(white: 0.5, alpha: 1)
+        return UIColor(rgbHex: 0x606080)
     }
 
     class var ows_gray60: UIColor {
-        return UIColor(rgbHex: 0x5E5E5E)
+        return UIColor(rgbHex: 0x4A4A6A)
     }
 
     class var ows_gray65: UIColor {
-        return UIColor(rgbHex: 0x4A4A4A)
+        return UIColor(rgbHex: 0x383858)
     }
 
     class var ows_gray75: UIColor {
-        return UIColor(rgbHex: 0x3B3B3B)
+        return UIColor(rgbHex: 0x252540)
     }
 
     class var ows_gray80: UIColor {
-        return UIColor(rgbHex: 0x2E2E2E)
+        return UIColor(rgbHex: 0x1C1C32)
     }
 
     class var ows_gray85: UIColor {
-        return UIColor(rgbHex: 0x23252A)
+        return UIColor(rgbHex: 0x141424)
     }
 
     class var ows_gray90: UIColor {
-        return UIColor(rgbHex: 0x1B1B1B)
+        return UIColor(rgbHex: 0x0C0C18)
     }
 
     class var ows_gray95: UIColor {
